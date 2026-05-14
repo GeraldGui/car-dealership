@@ -44,7 +44,7 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Java: corretto-17 Amazon Corretto 17.0.18
 
 ## Demo
-
+![Demo](Demo.gif)
 
 ## Future Work
 

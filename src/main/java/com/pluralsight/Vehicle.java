@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Vehicle {
     private int vin;
-    private  int year;
+    private int year;
     private int odometer;
     private double price;
     private String make;
@@ -87,4 +87,11 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "| %-6d | %d | %-10s | %-10s | %-8s | %-6s | %,d mi | $%,.2f |",
+                vin, year, make, model, color, vehicleType, odometer, price
+        );
+    }
 }

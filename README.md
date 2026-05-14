@@ -2,9 +2,23 @@
 
 ## Description of the Project
 
+This is a Java console application that simulates a car dealership management system.
+It allows users to search through a vehicle inventory by price, make/model, year, color,
+mileage, and type. Users can also add and remove vehicles from the lot, with all changes
+being saved to a CSV file so the data persists between sessions.
 
 ## User Stories
 
+- As a customer I would like to find vehicles within my price range so that I can find my a vehicle faster.
+- As a customer I would like to find a vehicle by make/model so that I can see what is in stock.
+- As a customer I would like to find the year range of the vehicles so that I can see what year of cars on the lot.
+- As a customer I would like to see vehicles by color so that I can find my color in the lot.
+- As a customer I would like to find vehicles by the mileage range so that I can see if you have a low mileage car.
+- As a customer I would like to find a types of vehicles so that I can see my options from the lot.
+- As a customer I would like to see all available vehicles so that I can browse through the lot.
+- As a customer I would like to add a vehicle to the list so that I can display them in my lot.
+- As a customer I would like to remove a vehicle from the list so that I can only show what I have in the lot.
+- As a customer I would like to quit the application so that I can close the application.
 
 ## Setup
 
@@ -34,6 +48,9 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Future Work
 
+- Add a login system so only authorized users can add or remove vehicles.
+- Add a sales contract system to track vehicles that have been sold.
+- Add a leasing contract option for customers who want to lease instead of buy.
 
 ## Resources
 

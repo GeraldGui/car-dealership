@@ -17,9 +17,10 @@ public class UserInterface {
         init();
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Welcome to " + dealership.getName() + ", our address is " + dealership.getAddress() + ", our phone is " + dealership.getPhone() + "\n");
+
         int choice = -1;
         while (choice != 99) {
-            System.out.println("\nWelcome to the Dealership!");
             System.out.println("1. Find vehicles within a price range");
             System.out.println("2. Find vehicles by make / model");
             System.out.println("3. Find vehicles by year range");
@@ -250,6 +251,8 @@ public class UserInterface {
 
             if (toRemove != null) {
                 dealership.removeVehicle(toRemove);
+                DealershipFileManager fileManager = new DealershipFileManager();
+                fileManager.saveDealership(dealership);
                 System.out.println("Vehicle has been removed");
             } else {
                 System.out.println("Vehicle could not be found");
@@ -262,6 +265,7 @@ public class UserInterface {
     }
 
     private void displayVehicles(List<Vehicle> vehicle) {
+        System.out.println("| VIN    | Year | Make       | Model      | Color    | Type   | Mileage    | Price      |");
         for (Vehicle lot : vehicle) {
             System.out.println(lot);
         }
